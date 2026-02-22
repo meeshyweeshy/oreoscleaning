@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oreo's Cleaning | Professional Cleaning Services</title>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Language Selection Splash Screen -->
+  <div id="language-splash" class="language-splash">
+    <div class="splash-content">
+      <div class="splash-logo">Oreo's <span>Cleaning</span></div>
+      <h2 class="splash-title">Select Your Language</h2>
+      <div class="language-options">
+        <button class="btn btn-primary" data-lang="en">English</button>
+        <button class="btn btn-primary" data-lang="es">Español</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">Oreo's <span>Cleaning</span></div>
+      <div class="mobile-menu-btn" id="mobile-menu-btn">☰</div>
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" data-i18n="navHome">Home</a></li>
+          <li><a href="#services" data-i18n="navServices">Services</a></li>
+          <li><a href="#contact" data-i18n="navContact">Contact</a></li>
+          <li class="nav-phone">
+            <span>📞</span> (407) 364-2499
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1 data-i18n="heroTitle"><span class="oreo-text">Transform Your Experience With Professional Care</span></h1>
+      <p data-i18n="heroSubtitle">Experience the difference with Oreo's Cleaning . We provide top-tier
+        residential and commercial cleaning
+        services tailored to your needs.</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; align-items: center;">
+        <a href="#contact" class="btn btn-primary" data-i18n="heroBtn">Book Now</a>
+        <a href="#contact" style="color: #a3a3a3; font-weight: 500; text-decoration: underline;"
+          data-i18n="navContact">Contact Us</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <h3>100%</h3>
+          <p data-i18n="statsSatisfaction">Satisfaction</p>
+        </div>
+        <div class="stat-item">
+          <h3>24/7</h3>
+          <p data-i18n="statsSupport">Support</p>
+        </div>
+        <div class="stat-item">
+          <h3>5+</h3>
+          <p data-i18n="statsExperience">Years Experience</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="section-title" data-i18n="servicesTitle">Our Services</h2>
+      <p class="section-subtitle" data-i18n="servicesSubtitle">Comprehensive cleaning solutions for every need</p>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card">
+          <div class="service-icon">🏠</div>
+          <h3 data-i18n="service1Title">Residential Cleaning</h3>
+          <p data-i18n="service1Desc">Keep your home pristine with our regular housekeeping, deep cleaning, and
+            move-in/move-out services.</p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+          <div class="service-icon">🏢</div>
+          <h3 data-i18n="service2Title">Commercial Cleaning</h3>
+          <p data-i18n="service2Desc">Create a professional environment for your business with our reliable office and
+            commercial space cleaning.
+          </p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="service-icon">✨</div>
+          <h3 data-i18n="service3Title">Deep Cleaning</h3>
+          <p data-i18n="service3Desc">A thorough top-to-bottom clean that targets hard-to-reach areas and stubborn
+            grime.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Area Section -->
+  <section id="service-area"
+    style="background-color: var(--bg-color); padding: var(--section-padding); text-align: center;">
+    <div class="container">
+      <h2 class="section-title" data-i18n="areaTitle">Service Area</h2>
+      <p class="section-subtitle" data-i18n="areaSubtitle">Proudly serving Ocala, FL and surrounding communities</p>
+
+      <div
+        style="max-width: 800px; margin: 0 auto; border: 2px solid var(--primary-color); padding: 3rem; position: relative;">
+        <!-- Ornamental corners -->
+        <div
+          style="position: absolute; top: -10px; left: -10px; width: 40px; height: 40px; border-top: 4px solid var(--primary-color); border-left: 4px solid var(--primary-color); background: var(--bg-color);">
+        </div>
+        <div
+          style="position: absolute; bottom: -10px; right: -10px; width: 40px; height: 40px; border-bottom: 4px solid var(--primary-color); border-right: 4px solid var(--primary-color); background: var(--bg-color);">
+        </div>
+
+        <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; font-weight: 800;" data-i18n="areaRadius">📍 Ocala + 15
+          Mile
+          Radius</h3>
+        <p style="font-size: 1.125rem; margin-bottom: 2rem;" data-i18n="areaDesc">
+          We bring premium cleaning services directly to your doorstep. Whether you're in the heart of Ocala or in
+          another city's, Oreo's Cleaning is just a call away.
+        </p>
+
+        <!-- Zip Code Checker form -->
+        <div class="zip-checker" style="margin-bottom: 2rem;">
+          <input type="text" id="zip-input" placeholder="Enter your Zip Code" data-i18n="zipPlaceholder"
+            style="padding: 0.75rem 1rem; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem; margin-right: 0.5rem; max-width: 250px; width: 100%;">
+          <button id="check-zip-btn" class="btn btn-primary" data-i18n="zipCheckBtn" style="border-radius: 5px;">Check
+            Availability</button>
+        </div>
+
+        <!-- Result Message Container -->
+        <div id="zip-result" style="font-weight: 600; font-size: 1.1rem; margin-bottom: 1rem;"></div>
+
+        <div style="background: var(--bg-alt); padding: 1.5rem; display: inline-block;">
+          <p style="font-weight: 600; margin: 0;" data-i18n="areaZip">Covering zip codes throughout Marion County</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ticket System Modal -->
+  <div id="ticket-modal" class="ticket-modal hidden"
+    style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 9999; display: flex; justify-content: center; align-items: center; opacity: 0; pointer-events: none; transition: opacity 0.3s ease;">
+    <div class="modal-content"
+      style="background: #fff; padding: 2rem; border-radius: 8px; width: 90%; max-width: 500px; position: relative;">
+      <button id="close-ticket"
+        style="position: absolute; top: 1rem; right: 1rem; background: none; border: none; font-size: 1.5rem; cursor: pointer;">&times;</button>
+      <h3 style="margin-bottom: 1rem; color: var(--primary-color);" data-i18n="ticketTitle">Submit a Ticket</h3>
+      <p style="margin-bottom: 1.5rem; color: var(--text-light);" data-i18n="ticketDesc">How can we help you today?</p>
+
+      <form id="ticket-form" style="display: flex; flex-direction: column; gap: 1rem;">
+        <div>
+          <label for="ticket-name" style="display:block; margin-bottom: 0.5rem; font-weight: 500;"
+            data-i18n="ticketName">Name</label>
+          <input type="text" id="ticket-name" name="name" required
+            style="width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px;">
+        </div>
+        <div>
+          <label for="ticket-email" style="display:block; margin-bottom: 0.5rem; font-weight: 500;"
+            data-i18n="ticketEmail">Email</label>
+          <input type="email" id="ticket-email" name="email" required
+            style="width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px;">
+        </div>
+        <div>
+          <label for="ticket-message" style="display:block; margin-bottom: 0.5rem; font-weight: 500;"
+            data-i18n="ticketMessage">Message</label>
+          <textarea id="ticket-message" name="message" required rows="4"
+            style="width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px; resize: vertical;"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="margin-top: 1rem; border-radius: 4px;"
+          data-i18n="ticketSubmitBtn">Submit Ticket</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Contact / Footer -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <!-- Social Placeholders (appear = false) -->
+          <div class="social-links" style="display: none;" data-appear="false">
+            <a href="#" class="social-icon" aria-label="Facebook">FB</a>
+            <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+          </div>
+
+          <div class="footer-links">
+            <h3 style="margin-bottom: 0;" data-i18n="footerQuickLinks">Quick Links</h3>
+            <ul>
+              <li style="margin-bottom: 0rem;"><a href="#home" data-i18n="navHome">Home</a></li>
+              <li style="margin-bottom: 0rem;"><a href="#services" data-i18n="navServices">Services</a></li>
+              <li style="margin-bottom: 0rem;"><a href="#contact" data-i18n="navContact">Contact Us</a></li>
+              <li style="margin-bottom: 0.75rem;"><a href="#" id="change-lang-btn" data-i18n="changeLang">Change
+                  Language</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h3 style="margin-bottom: 0;" data-i18n="footerGetInTouch">Get in Touch</h3>
+            <ul>
+              <li style="margin-bottom: 0rem;" data-i18n="footerPhoneES">Spanish: (407) 319-4310</li>
+              <li style="margin-bottom: 0rem;" data-i18n="footerPhoneEN">English: (407) 364-2499</li>
+              <li style="margin-bottom: 0rem;">(863) 547-5216</li>
+              <li style="margin-bottom: 0rem;">Email:mayravaldivialanza42@gmail.com </li>
+              <li style="margin-bottom: 0.75rem;" data-i18n="footerLocation">Location: Ocala, FL</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="copyright">
+          &copy; 2026 Oreo's Cleaning LLC . All rights reserved.
+        </div>
+      </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
